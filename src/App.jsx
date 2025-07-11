@@ -1,6 +1,7 @@
 
 import './App.css'
 import Counter from './Counter';
+import Team from './Team';
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
       <button onClick={handlejsShop}>Shop</button>
       <button onClick={() => passNumk(20)}>Add Num</button>
       <Counter></Counter>
+
+      <Team></Team>
     </>
   )
 }
