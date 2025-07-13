@@ -1,4 +1,5 @@
 
+import Users from '../Users';
 import './App.css'
 import Counter from './Counter';
 import Team from './Team';
@@ -22,6 +23,7 @@ function App() {
       <Counter></Counter>
 
       <Team></Team>
+      <Users></Users>
     </>
   )
 }
