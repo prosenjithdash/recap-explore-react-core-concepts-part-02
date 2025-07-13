@@ -1,4 +1,5 @@
 
+import Friends from '../Friends';
 import Users from '../Users';
 import './App.css'
 import Counter from './Counter';
@@ -14,6 +15,7 @@ function App() {
     alert(num + 5);
   }
 
+
   return (
     <>
       
@@ -24,6 +26,8 @@ function App() {
 
       <Team></Team>
       <Users></Users>
+
+      <Friends></Friends>
     </>
   )
 }
