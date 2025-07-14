@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Friend from "./Friend";
 
 export default function Friends() {
 
@@ -13,17 +14,22 @@ export default function Friends() {
   }
     
     
-    const [data, setData] = useState([])
+    const [friends, setFriends] = useState([])
 
     // Load API
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
-            .then(data => setData(data));
+            .then(data => setFriends(data));
     },[])
     return (
         <div style={FriendsStyle}>
-            <p>Friends:{data.length} </p>
+            <p>Friends:{setFriends.length} </p>
+            
+            {
+                friends.map((friend) =><Friend friend={friend}></Friend>)
+            }
+            
         </div>
     )
 }
